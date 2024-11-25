@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
   <ThemeProvider>
-    <div v-if="isLoading" class="loading-overlay lol">
+    <div v-if="isLoading" class="loading-overlay bgbg">
       <div class="text-center">
         <div class="flex-col gap-4 w-full flex items-center justify-center">
           <div
@@ -62,7 +62,10 @@ onMounted(() => {
 .lol {
   position: relative; /* Parent for stars */
 }
+.bgbg{
+  background-image: linear-gradient(270deg, rgb(27, 20, 41), rgb(20, 15, 35));
 
+}
 .loading-overlay {
   position: fixed; /* Change to fixed to cover the viewport */
   top: 0;
