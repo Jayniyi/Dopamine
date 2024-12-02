@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import HeroImg from "@/assets/img/undraw_web_developer_re_h7ie.svg";
-
+import AboutImg from "@/assets/img/about-svg.svg";
 const textOptions = [
   "Learn Everyday",
   "Build My Ideas",
@@ -62,9 +62,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="hero-container md:h-screen h-screen w-full">
+  <div class="hero-container min-h-screen w-full overflow:">
     <div
-      class="relative md:top-20 top-24 lg:top-40 md:flex md:justify-between lg:px-28 md:px-24 md:py-10 w-full h-full"
+      class="relative md:top-20 top-24 lg:top-40 md:flex md:justify-between lg:px-28 px-10 md:px-24 md:py-10 w-full h-full"
     >
       <div class="lg:pt-10">
         <h1 class="text-4xl font-bold text-white capitalize">
@@ -73,8 +73,8 @@ onUnmounted(() => {
         <h1 class="md:text-3xl lg:text-4xl pt-5 font-bold text-white">
           I'M <span class="text-[#c770F0]">OBASAN JOSEPH OLANIYI</span>
         </h1>
-        <div class="text-2xl pt-5">
-          <span class="gradient-text">I &nbsp;</span>
+        <div class="text-2xl pt-5 py-7">
+          <span class="gradient-text">I </span>
           <span class="relative gradient-text">
             <span aria-live="polite">{{ displayText }}</span>
             <span
@@ -82,13 +82,47 @@ onUnmounted(() => {
               class="absolute top-0 animate-blink"
               aria-hidden="true"
             >
-              |
             </span>
           </span>
         </div>
       </div>
       <div>
         <img :src="HeroImg" alt="Hero Image" class="w-96" />
+      </div>
+    </div>
+  </div>
+  <!-- about me section  -->
+  <div class="pt-20">
+    <div>
+      <h1>About Me</h1>
+      <div class="md:flex md:justify-center gap-4 lg:px-28">
+        <div class="w-full">
+          <p class="text-xl">
+            Hello! I'm a passionate Front-End Developer based in Nigeria,
+            aspiring to become a Full-Stack Developer. I thrive on transforming
+            complex problems into simple, beautiful, and intuitive designs. My
+            goal is to build websites that are not only functional and
+            user-friendly but also visually appealing. I believe in adding a
+            personal touch to every project, ensuring that the final product is
+            eye-catching and easy to navigate.
+          </p> <br> 
+          <!-- <p>
+            As a tech enthusiast, I am deeply committed to continuously
+            enhancing my web development skills. I enjoy problem-solving and
+            writing code, always eager to explore new technologies. Currently,
+            I'm also diving into the world of cybersecurity, aiming to broaden
+            my expertise and secure digital spaces.
+          </p> -->
+          <!-- <p>
+            When I'm not coding, you can find me gaming, listening to music, or
+            watching anime. I also love working out and enjoying comedies. I’m
+            passionate about sharing knowledge and meeting new people, as I
+            believe collaboration is key to growth in the tech community.
+          </p> -->
+        </div>
+         <div class="w-full -mt-9">
+          <img :src="AboutImg" alt="" srcset="" class="w-96">
+         </div>
       </div>
     </div>
   </div>

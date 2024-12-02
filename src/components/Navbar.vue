@@ -14,8 +14,7 @@ const Links = ref([
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Project", link: "#" },
-  { name: "Resume", link: "#" },
-  { name: "Contact", link: "#" },
+  { name: "Resume", link: "#" }
 ]);
 
 const handleScroll = () => {
@@ -32,8 +31,14 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div :class="['fixed w-full lg:flex justify-between lg:px-28 z-10 transition-colors duration-300', isScrolled ? (isDarkMode ? 'bg-blue-900' : 'bg-blue-700') : 'bg-transparent']">
-    <div class="flex items-center md:bg-inherit md:py-4 pb-5 md:pb-0">
+  <div
+    :style="{
+      background: isScrolled
+        ? (isDarkMode ? '#2d1950' : 'linear-gradient(to bottom left, hsla(0, 3%, 6%, .678), rgba(12, 10, 22, .863))')
+        : 'transparent'
+    }"
+    class="fixed w-full lg:flex md:px-24 px-8 justify-between lg:px-28 z-10 transition-colors duration-300 bg-blur"
+  >    <div class="flex items-center md:bg-inherit md:py-4 pb-5 md:pb-0">
       <h1 class="text-xl px-3 py-3 md:px-0">Designer</h1>
 
 
@@ -65,4 +70,16 @@ onBeforeUnmount(() => {
     </ul>
   </div>
 </template>
+<style scoped>
+/* Existing styles */
+.bg-gradient {
+  background: linear-gradient(to bottom left, hsla(0, 3%, 6%, 0.678), rgba(12, 10, 22, 0.863));
+}
+
+/* New class for blur effect */
+.bg-blur {
+  backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+  background: rgba(255, 255, 255, 0.7); /* Use a semi-transparent background for effect */
+}
+</style>
 
