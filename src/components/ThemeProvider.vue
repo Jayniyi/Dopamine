@@ -1,10 +1,4 @@
 <!-- src/components/ThemeProvider.vue -->
-<template>
-  <div :class="theme">
-    <slot />
-  </div>
-</template>
-
 <script setup>
 import { ref, provide, onMounted } from "vue"; // Ensure all necessary functions are imported
 
@@ -28,10 +22,19 @@ onMounted(() => {
 });
 </script>
 
+
+<template>
+  <div :class="theme">
+    <slot />
+  </div>
+</template>
+
+
+
 <style scoped>
 /* Styles for light and dark themes */
 .light {
-  background-image: linear-gradient(270deg, rgb(27, 20, 41), rgb(20, 15, 35));
+  background-image: linear-gradient(270deg, rgb(0, 0, 0), rgb(20, 15, 35));
   color: #ffffff;
 }
 .dark {

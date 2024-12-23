@@ -34,7 +34,7 @@ onBeforeUnmount(() => {
   <div
     :style="{
       background: isScrolled
-        ? (isDarkMode ? '#2d1950' : 'linear-gradient(to bottom left, hsla(0, 3%, 6%, .678), rgba(12, 10, 22, .863))')
+        ? (isDarkMode ? '#c770F' : 'linear-gradient(to bottom left, hsla(0, 3%, 6%, .678), rgba(12, 10, 22, .863))')
         : 'transparent'
     }"
     class="fixed w-full lg:flex md:px-24 px-8 justify-between lg:px-28 z-10 transition-colors duration-300 bg-blur"
