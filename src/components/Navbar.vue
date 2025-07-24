@@ -13,7 +13,7 @@ const toggleDarkMode = inject('toggleDarkMode');
 const Links = ref([
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Project", link: "#" },
+  { name: "Project", link: "/project" },
   { name: "Resume", link: "#" }
 ]);
 

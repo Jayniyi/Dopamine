@@ -14,11 +14,7 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
             know who <span class="text-[#c770F0] bold">i'M</span>
           </h1>
           <p class="leading-6 text-xl">
-            My name is Obasan Joseph, and I am a passionate frontend developer
-            from Nigeria. Currently, I am completing my final year of study in
-            Computer Science, where I have honed my skills in web development
-            and design. I specialize in creating dynamic and responsive user
-            interfaces using modern web technologies.
+            My name is Obasan Joseph, a passionate full-stack developer from Nigeria. I am completing my final year in Computer Science at Hallmark University, with a strong focus on building responsive and user-friendly web applications using technologies like HTML, CSS, JavaScript, Vue.js, and Firebase. I interned at 720 Degree Innovation Hub and am currently expanding into cybersecurity while exploring forex trading to sharpen my analytical skills.
           </p>
           <p class="text-[#9B7EAC] text-justify pt-4">
             <i
@@ -32,6 +28,7 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
           <img :src="ProgramImg" alt="" srcset="" class="w-96" />
         </div>
       </div>
+
     </div>
   </div>
   <div class="pt-44 md:pt-0">
@@ -68,7 +65,6 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
           </svg>
           <button class="card-button">HTML</button>
         </div>
-
         <div class="card w-36">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -444,13 +440,152 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
       </div>
     </div>
   </div>
+  <!-- New Section: My Projects -->
+  <div class="container mx-auto py-12 px-4">
+    <div class="flex flex-col md:flex-row justify-between gap-12">
+      <div class="w-full md:w-1/2">
+        <h2 class="text-2xl font-bold text-white mb-4">My Education</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Junior Secondary School</h3>
+              <p class="text-gray-300">Premier College, Ijebu Ode | Completed 2015-2018</p>
+              <p class="text-gray-300">
+Finished my junior secondary education here, laying the foundation for my academic journey.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Senior Secondary School</h3>
+              <p class="text-gray-300">Federal Science and Technical College (FSTC) | Completed 2019-2021</p>
+              <p class="text-gray-300">
+              Studied Computer Craft in CSS, completed NECO, NABTEB, and WAEC exams, building my technical skills.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Bachelor’s in Computer Science</h3>
+              <p class="text-gray-300">Hallmark University | 2021 - 2025 (completed)</p>
+              <p class="text-gray-300">
+              I graduated from Hallmark University with a Bachelor’s in Computer Science and performed well, ranking among the top students. During my time in school, I built a series of web projects, honing my skills in web development.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-2xl font-bold text-[#fff] mb-4">My Experience</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">UI/UX Designer</h3>
+              <p class="text-gray-300">720 Degree Innovation Hub | Before University</p>
+              <p class="text-gray-300">
+                Started my career in UI/UX design, building a strong foundation before pursuing higher education.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Web Developer (Internship)</h3>
+              <p class="text-gray-300">720 Degree Innovation Hub | 2022 - 2023</p>
+              <p class="text-gray-300">
+                Enhanced my web development skills during my university years, working with the team and learning from hands-on experience.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
+            <div>
+              <h3 class="text-lg font-semibold text-white">Web Developer (Self-Taught)</h3>
+              <p class="text-gray-300">720 Degree Innovation Hub | During University</p>
+              <p class="text-gray-300">
+                Served as the main manager at 720, overseeing operations and applying my skills in a leadership role.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div style="display: flex; justify-content: center; margin: auto;">
+    <!-- From Uiverse.io by andrew-demchenk0 --> 
+    <button class="buttonn" type="button">
+      <span class="button__text">Download CV</span>
+      <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+    </button>
+  </div>
+  <section>
+          <div class="footer mt-8 lg:px-8 pt-3 lg:bg-[#0a0416] capitalize">
+        <div class="lg:flex justify-between text-center">
+          <h4 class="lg:pt-5">
+            Designed and developed by <i class="">obasan joseph</i>
+          </h4>
+          <h4 class="lg:pt-5">
+            <p>&copy; {{ currentYear }} DevJay. All rights reserved.</p>
+          </h4>
+          <div class="hidden lg:block">
+            <div class="cardd">
+              <a
+                class="socialContainer containerTwo"
+                href="https://x.com/OlanJayy?t=xvgrR1CmDUI_-aqYx_L5qg&s=09"
+              >
+                <svg viewBox="0 0 16 16" class="socialSvg twitterSvg">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                class="socialContainer containerThree"
+                href="https://www.instagram.com/jayni_yi/"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                class="socialContainer containerFour"
+                href="https://wa.me/07079887893"
+              >
+                <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 </template>
 <style scoped>
 .card {
   width: 190px;
   height: 254px;
   border-radius: 20px;
-  /* background:; */
   position: relative;
   padding: 1.8rem;
   border: 2px solid #c3c6ce;
@@ -486,13 +621,11 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
   color: rgb(134, 134, 134);
 }
 
-/*Text*/
 .text-title {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/*Hover*/
 .card:hover {
   border-color: #9b7eac;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
@@ -502,4 +635,279 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
   transform: translate(-50%, 50%);
   opacity: 1;
 }
+
+.buttonn {
+  position: relative;
+  width: 168px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.buttonn, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.buttonn .button__text {
+  transform: translateX(22px);
+  color: #360a4f;
+  font-weight: 600;
+}
+
+.buttonn .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #3e075e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 1.3rem;
+}
+
+.buttonn .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.buttonn:hover .button__text {
+  color: transparent;
+}
+
+.buttonn:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonn:active .button__icon {
+  background-color: #9B7EAC;
+}
+
+.buttonn:active {
+  border: 1px solid #fff;
+}
+/* for all social containers*/
+.socialContainer {
+  width: 32px;
+  height: 32px;
+  background-color: rgb(65, 29, 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+ul {
+  list-style: none;
+}
+.icon-content svg:hover {
+  fill: #0274b3;
+}
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #25d366;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #25d366,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #0274b3
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+:root {
+  --wave-duration: 1s;
+  --blink-duration: 1s;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #ff77b4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.wave-hand {
+  font-size: 3rem;
+  display: inline-block;
+  animation: wave var(--wave-duration) infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink var(--blink-duration) infinite;
+}
+.cardd {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
 </style>
