@@ -1,5 +1,7 @@
 <script setup>
 import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
+
+const currentYear = new Date().getFullYear();
 </script>
 <template>
   <div class="hero-container md:h-screen h-screen w-full">
@@ -18,8 +20,8 @@ import ProgramImg from "@/assets/img/undraw_programming_65t2.svg";
           </p>
           <p class="text-[#9B7EAC] text-justify pt-4">
             <i
-              >“Building bridges between ideas and reality, one webpage at a
-              time.”
+              >"Building bridges between ideas and reality, one webpage at a
+              time."
             </i>
           </p>
           <h3 class="text-center text-[#9B7EAC]">— Obasan Joseph</h3>
@@ -469,10 +471,10 @@ Finished my junior secondary education here, laying the foundation for my academ
           <li class="flex items-start">
             <span class="inline-block w-2 h-2 mt-2 bg-white rounded-full mr-3"></span>
             <div>
-              <h3 class="text-lg font-semibold text-white">Bachelor’s in Computer Science</h3>
+              <h3 class="text-lg font-semibold text-white">Bachelor's in Computer Science</h3>
               <p class="text-gray-300">Hallmark University | 2021 - 2025 (completed)</p>
               <p class="text-gray-300">
-              I graduated from Hallmark University with a Bachelor’s in Computer Science and performed well, ranking among the top students. During my time in school, I built a series of web projects, honing my skills in web development.
+              I graduated from Hallmark University with a Bachelor's in Computer Science and performed well, ranking among the top students. During my time in school, I built a series of web projects, honing my skills in web development.
               </p>
             </div>
           </li>

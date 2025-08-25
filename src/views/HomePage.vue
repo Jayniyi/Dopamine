@@ -110,9 +110,13 @@ const currentYear = ref(new Date().getFullYear());
             eye-catching and easy to navigate.
           </p>
           <br />
-          <button @click="" class="bg-white text-red-500 p-2">
-            Download Resume (to be attended to)
-          </button>
+          <RouterLink 
+            to="/resume" 
+            class="inline-flex items-center gap-2 bg-[#c770F0] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b060e0] transition-all duration-300 hover:scale-105"
+          >
+            <i class="bi bi-file-earmark-text"></i>
+            View Resume
+          </RouterLink>
         </div>
         <div class="w-full -mt-9 flex justify-center">
           <img
