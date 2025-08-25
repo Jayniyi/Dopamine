@@ -14,7 +14,7 @@ const Links = ref([
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Project", link: "/project" },
-  { name: "Resume", link: "#" }
+  { name: "Resume", link: "/resume" }
 ]);
 
 const handleScroll = () => {

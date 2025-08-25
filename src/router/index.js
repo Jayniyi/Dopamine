@@ -4,13 +4,14 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "@/views/HomePage.vue";
 import AboutPage from "@/views/AboutPage.vue";
 import Project from "@/views/Project.vue";
+import Resume from "@/views/Resume.vue";
 
 // Define routes
 const routes = [
   { path: "/", name: "Home", component: HomePage },
   { path: "/about", name: "About", component: AboutPage },
-  {path: "/project", name: "Project", component: Project, props: true },
-
+  { path: "/project", name: "Project", component: Project, props: true },
+  { path: "/resume", name: "Resume", component: Resume },
 ];
 
 // Create router instance
