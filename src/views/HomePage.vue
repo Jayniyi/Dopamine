@@ -2,20 +2,22 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import HeroImg from "@/assets/img/undraw_web_developer_re_h7ie.svg";
 import AboutImg from "@/assets/img/about-svg.svg";
+
 const textOptions = [
-  "Learn Everyday",
-  "Build My Ideas",
-  "Write and test Codes",
-  "Explore New Technologies",
-  "Collaborate with Others",
-  "Create Impactful Solutions",
-  "Lead Innovative Projects",
+  "Full-Stack Developer",
+  "Cybersecurity Enthusiast", 
+  "Problem Solver",
+  "Security Researcher",
+  "Web Application Builder",
+  "Ethical Hacker in Training",
+  "Digital Security Advocate",
 ];
+
 const currentTextIndex = ref(0);
 const currentCharIndex = ref(0);
 const isTyping = ref(true);
 const cursorVisible = ref(true);
-const typingSpeed = 150; // Adjust this value to control typing speed (in milliseconds)
+const typingSpeed = 120;
 
 const currentText = computed(() => textOptions[currentTextIndex.value]);
 const displayText = computed(() =>
@@ -59,55 +61,232 @@ onMounted(() => {
 onUnmounted(() => {
   cancelAnimationFrame(animationFrame);
 });
+
 const currentYear = ref(new Date().getFullYear());
+
+// Cybersecurity skills data
+const cyberSkills = ref([
+  { name: 'Network Security', level: 65, icon: '🛡️' },
+  { name: 'Ethical Hacking', level: 55, icon: '🔍' },
+  { name: 'Penetration Testing', level: 50, icon: '🎯' },
+  { name: 'Security Analysis', level: 60, icon: '🔒' }
+]);
+
+const webSkills = ref([
+  { name: 'Vue.js', level: 90, icon: '💚' },
+  { name: 'JavaScript', level: 85, icon: '⚡' },
+  { name: 'Firebase', level: 80, icon: '🔥' },
+  { name: 'React', level: 75, icon: '⚛️' }
+]);
 </script>
 
 <template>
-  <div class="hero-container w-full overflow:">
+  <div class="hero-container w-full min-h-screen relative overflow-hidden">
+    <!-- Enhanced Background Effects -->
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20"></div>
+    <div class="absolute inset-0">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    </div>
+    
     <div
-      class="relative md:top-20 top-24 lg:top-40 md:flex md:justify-between lg:px-28 px-10 md:px-24 md:py-10 w-full h-full"
+      class="relative z-10 md:top-20 top-24 lg:top-40 md:flex md:justify-between lg:px-28 px-10 md:px-24 md:py-10 w-full h-full"
     >
-      <div class="lg:pt-10">
-        <h1 class="text-4xl font-bold text-white capitalize">
+      <div class="lg:pt-10 space-y-6">
+        <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
+          <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span class="text-sm text-gray-300">Available for opportunities</span>
+        </div>
+        
+        <h1 class="text-4xl lg:text-5xl font-bold text-white capitalize leading-tight">
           Hi there! <span class="wave-hand" aria-hidden="true">👋</span>
         </h1>
-        <h1 class="md:text-3xl lg:text-4xl pt-5 font-bold text-white">
+        
+        <h1 class="md:text-3xl lg:text-4xl font-bold text-white">
           I'M <span class="text-[#c770F0]">OBASAN JOSEPH OLANIYI</span>
         </h1>
-        <div class="text-2xl pt-5 py-7">
-          <span class="gradient-text">I </span>
+        
+        <div class="text-2xl lg:text-3xl py-4">
+          <span class="gradient-text font-semibold">I'm a </span>
           <span class="relative gradient-text">
             <span aria-live="polite">{{ displayText }}</span>
             <span
               v-if="cursorVisible"
-              class="absolute top-0 animate-blink"
+              class="absolute top-0 animate-blink text-[#c770F0]"
               aria-hidden="true"
             >
+              |
             </span>
           </span>
         </div>
+        
+        <p class="text-lg text-gray-300 max-w-2xl leading-relaxed">
+          Passionate about building secure web applications and exploring the fascinating world of cybersecurity. 
+          Currently advancing my skills in ethical hacking and penetration testing while creating innovative web solutions.
+        </p>
+        
+        <div class="flex flex-wrap gap-4 pt-4">
+          <RouterLink 
+            to="/project" 
+            class="inline-flex items-center gap-2 bg-[#c770F0] hover:bg-[#b060e0] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+          >
+            <i class="bi bi-code-slash"></i>
+            View Projects
+          </RouterLink>
+          
+          <a
+            href="mailto:obasanjoseph@gmail.com"
+            class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 backdrop-blur-sm border border-white/20"
+          >
+            <i class="bi bi-envelope"></i>
+            Contact Me
+          </a>
+        </div>
       </div>
-      <div>
-        <img :src="HeroImg" alt="Hero Image" class="w-96" />
+      
+      <div class="relative mt-10 md:mt-0">
+        <div class="relative">
+          <img :src="HeroImg" alt="Hero Image" class="w-96 lg:w-[450px] relative z-10" />
+          <!-- Floating elements around the image -->
+          <div class="absolute -top-4 -right-4 bg-[#c770F0]/20 backdrop-blur-sm rounded-lg p-3 animate-bounce delay-300">
+            <i class="bi bi-shield-check text-2xl text-[#c770F0]"></i>
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-blue-500/20 backdrop-blur-sm rounded-lg p-3 animate-bounce delay-700">
+            <i class="bi bi-code-slash text-2xl text-blue-400"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- about me section  -->
-  <div class="pt-20 lg:mt-64 mt-40">
+  
+  <!-- Enhanced About Me Section -->
+  <div class="pt-20 lg:mt-32 mt-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-r from-purple-900/5 to-blue-900/5"></div>
     <div class="px-10 lg:px-0">
-      <h1 class="uppercase lg:px-28 pb-5 lg:text-4xl text-2xl">
+      <h1 class="uppercase lg:px-28 pb-8 lg:text-5xl text-3xl font-bold text-center lg:text-left">
         Let Me <span class="text-[#c770F0]">Introduce</span> Myself
       </h1>
-      <div class="md:flex md:justify-center gap-14 lg:px-28">
-        <div class="w-full">
-          <p class="text-xl text-justify">
-            Hello! I'm a passionate Full-stack Developer based in Nigeria,
-            aspiring to  dive into the cyber-security world. I thrive on transforming
-            complex problems into simple, beautiful, and intuitive designs. My
-            goal is to build websites that are not only functional and
-            user-friendly but also visually appealing. I believe in adding a
-            personal touch to every project, ensuring that the final product is
-            eye-catching and easy to navigate.
+      
+      <div class="md:flex md:justify-center gap-16 lg:px-28">
+        <div class="w-full space-y-6">
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <p class="text-xl text-justify leading-relaxed">
+              Hello! I'm a passionate <span class="text-[#c770F0] font-semibold">Full-stack Developer</span> based in Nigeria, 
+              currently <span class="text-blue-400 font-semibold">venturing deep into cybersecurity</span>. 
+              I thrive on transforming complex problems into simple, beautiful, and secure solutions.
+            </p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <h3 class="text-xl font-semibold text-[#c770F0] mb-3 flex items-center gap-2">
+              <i class="bi bi-shield-lock"></i>
+              My Cybersecurity Journey
+            </h3>
+            <p class="text-lg leading-relaxed">
+              I'm actively progressing in the cybersecurity field daily, focusing on <span class="text-blue-400">ethical hacking</span>, 
+              <span class="text-green-400">penetration testing</span>, and <span class="text-yellow-400">network security</span>. 
+              My goal is to become a certified security professional while building secure web applications.
+            </p>
+          </div>
+          
+          <div class="flex flex-wrap gap-4">
+            <RouterLink 
+              to="/resume" 
+              class="inline-flex items-center gap-2 bg-[#c770F0] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b060e0] transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <i class="bi bi-file-earmark-text"></i>
+              View Resume
+            </RouterLink>
+            
+            <RouterLink 
+              to="/about" 
+              class="inline-flex items-center gap-2 bg-white/10 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105 backdrop-blur-sm border border-white/20"
+            >
+              <i class="bi bi-person-circle"></i>
+              Learn More
+            </RouterLink>
+          </div>
+        </div>
+        
+        <div class="w-full -mt-9 flex justify-center relative">
+          <div class="relative">
+            <img
+              :src="AboutImg"
+              alt="About illustration"
+              class="lg:w-96 w-80 mt-10 lg:mt-0 relative z-10"
+            />
+            <!-- Skill indicators around image -->
+            <div class="absolute top-4 -right-8 bg-[#c770F0]/20 backdrop-blur-sm rounded-full p-2 animate-pulse">
+              <span class="text-sm font-semibold text-[#c770F0]">Vue.js</span>
+            </div>
+            <div class="absolute bottom-20 -left-8 bg-blue-500/20 backdrop-blur-sm rounded-full p-2 animate-pulse delay-500">
+              <span class="text-sm font-semibold text-blue-400">Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Skills Preview Section -->
+      <div class="lg:px-28 mt-16">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Web Development Skills -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <i class="bi bi-code-slash text-[#c770F0]"></i>
+              Web Development
+            </h3>
+            <div class="space-y-4">
+              <div
+                v-for="skill in webSkills"
+                :key="skill.name"
+                class="space-y-2"
+              >
+                <div class="flex justify-between items-center">
+                  <span class="text-white font-medium flex items-center gap-2">
+                    <span>{{ skill.icon }}</span>
+                    {{ skill.name }}
+                  </span>
+                  <span class="text-[#c770F0] font-semibold">{{ skill.level }}%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2">
+                  <div
+                    class="bg-gradient-to-r from-[#c770F0] to-[#b060e0] h-2 rounded-full transition-all duration-1000 ease-out"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cybersecurity Skills -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <i class="bi bi-shield-check text-blue-400"></i>
+              Cybersecurity
+            </h3>
+            <div class="space-y-4">
+              <div
+                v-for="skill in cyberSkills"
+                :key="skill.name"
+                class="space-y-2"
+              >
+                <div class="flex justify-between items-center">
+                  <span class="text-white font-medium flex items-center gap-2">
+                    <span>{{ skill.icon }}</span>
+                    {{ skill.name }}
+                  </span>
+                  <span class="text-blue-400 font-semibold">{{ skill.level }}%</span>
+                </div>
+                <div class="w-full bg-white/10 rounded-full h-2">
+                  <div
+                    class="bg-gradient-to-r from-blue-400 to-cyan-400 h-2 rounded-full transition-all duration-1000 ease-out"
+                    :style="{ width: skill.level + '%' }"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </p>
           <br />
           <RouterLink 
@@ -127,14 +306,20 @@ const currentYear = ref(new Date().getFullYear());
           />
         </div>
       </div>
+      
+      <!-- Enhanced Social Section -->
       <div class="socials mt-28">
-        <h1 class="text-center lg:text-5xl uppercase pb-3 text-3xl">
-          Find Me On
-        </h1>
-        <p class="text-center text-xl">
-          Feel Free to <span class="text-[#c770F0]">connect </span> with me
-        </p>
-        <div>
+        <div class="text-center mb-12">
+          <h1 class="lg:text-5xl uppercase pb-3 text-3xl font-bold">
+            Find Me On
+          </h1>
+          <p class="text-xl">
+            Feel Free to <span class="text-[#c770F0]">connect </span> with me
+          </p>
+          <div class="w-24 h-1 bg-gradient-to-r from-[#c770F0] to-blue-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+        
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
           <ul class="example-2 mt-8">
             <li class="icon-content">
               <a href="https://wa.me/07079887893">
@@ -176,8 +361,8 @@ const currentYear = ref(new Date().getFullYear());
                 >
                   <path
                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                    fill="currentColor"
-                  ></path>
+                      fill="currentColor"
+                    ></path>
                 </svg>
               </a>
               <div class="tooltip">GitHub</div>
@@ -209,7 +394,7 @@ const currentYear = ref(new Date().getFullYear());
             <li class="icon-content">
               <a
                 href="https://x.com/OlanJayy?t=xvgrR1CmDUI_-aqYx_L5qg&s=09"
-                aria-label="Youtube"
+                aria-label="Twitter"
                 data-social="youtube"
               >
                 <div class="filled"></div>
@@ -247,12 +432,14 @@ const currentYear = ref(new Date().getFullYear());
           </ul>
         </div>
       </div>
-      <div class="footer mt-8 lg:px-8 pt-3 lg:bg-[#0a0416] capitalize">
-        <div class="lg:flex justify-between text-center">
-          <h4 class="lg:pt-5">
-            Designed and developed by <i class="">obasan joseph</i>
+      
+      <!-- Footer -->
+      <div class="footer mt-16 lg:px-8 pt-8 lg:bg-[#0a0416] capitalize border-t border-white/10">
+        <div class="lg:flex justify-between text-center px-10 lg:px-28">
+          <h4 class="lg:pt-5 text-gray-300">
+            Designed and developed by <i class="text-[#c770F0]">obasan joseph</i>
           </h4>
-          <h4 class="lg:pt-5">
+          <h4 class="lg:pt-5 text-gray-300">
             <p>&copy; {{ currentYear }} DevJay. All rights reserved.</p>
           </h4>
           <div class="hidden lg:block">
@@ -301,24 +488,12 @@ const currentYear = ref(new Date().getFullYear());
             </div>
           </div>
         </div>
-      </div>
+        </h1>
     </div>
   </div>
-
 </template>
 
 <style scoped>
-.card {
-  width: fit-content;
-  height: fit-content;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  gap: 20px;
-}
-
 /* for all social containers*/
 .socialContainer {
   width: 32px;
@@ -526,5 +701,16 @@ ul {
 
 .animate-blink {
   animation: blink var(--blink-duration) infinite;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
 }
 </style>
